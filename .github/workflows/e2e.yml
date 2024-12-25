@@ -47,6 +47,10 @@ jobs:
               find $exp -type d -print -mindepth 1 -maxdepth 1 >> $output_file
           fi
 
+          
+        
+
+
           exitCode=0
           while IFS= read -r line
           do

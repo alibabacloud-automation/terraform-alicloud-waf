@@ -1,35 +1,42 @@
 variable "big_screen" {
   description = "Specify whether big screen is supported. Valid values: ['0', '1']. '0' for false and '1' for true."
+  type        = string
   default     = "0"
 }
 
 variable "exclusive_ip_package" {
   description = "Specify the number of exclusive WAF IP addresses."
+  type        = string
   default     = "1"
 }
 
 variable "ext_bandwidth" {
   description = "The extra bandwidth. Unit: Mbit/s."
+  type        = string
   default     = "50"
 }
 
 variable "ext_domain_package" {
   description = "The number of extra domains."
+  type        = string
   default     = "1"
 }
 
 variable "log_storage" {
   description = "Log storage size. Unit: T. Valid values: [3, 5, 10, 20, 50]."
+  type        = string
   default     = "3"
 }
 
 variable "log_time" {
   description = "Log storage period. Unit: day. Valid values: [180, 360]."
+  type        = string
   default     = "180"
 }
 
 variable "package_code" {
   description = "Subscription plan"
+  type        = string
   default     = "version_3"
 }
 
@@ -41,20 +48,24 @@ variable "period" {
 
 variable "prefessional_service" {
   description = "Specify whether professional service is supported. Valid values: ['true', 'false']"
+  type        = string
   default     = "false"
 }
 
 variable "resource_group_id" {
   description = "The resource group ID."
+  type        = string
   default     = ""
 }
 
 variable "subscription_type" {
   description = "Subscription of WAF service. Valid values: ['Subscription', 'PayAsYouGo']."
+  type        = string
   default     = "Subscription"
 }
 
 variable "waf_log" {
   description = "Specify whether Log service is supported. Valid values: ['true', 'false']."
+  type        = string
   default     = "false"
 }
